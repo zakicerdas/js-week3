@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#prayerTime {
+  margin-top: 60px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+#prayerTime  div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+#prayerTime .name {
+  font-weight: 600;
+  color: #00796b;
+}
+
+
+#prayerTime .jadwal {
+  font-family: monospace;
+  color: #d32f2f;
+}
+
+#prayerTime > div:last-child {
+  border-bottom: none;
+}
