@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "judul": "One Piece",
+    "penulis": "Eiichiro Oda",
+    "tahun": 1997
+  },
+  {
+    "id": 2,
+    "judul": "Naruto",
+    "penulis": "Masashi Kishimoto",
+    "tahun": 1999
+  },
+  {
+    "id": 3,
+    "judul": "Bleach",
+    "penulis": "Tite Kubo",
+    "tahun": 2001
+  },
+  {
+    "id": 4,
+    "judul": "Attack on Titan",
+    "penulis": "Hajime Isayama",
+    "tahun": 2009
+  },
+  {
+    "id": 5,
+    "judul": "Demon Slayer",
+    "penulis": "Koyoharu Gotouge",
+    "tahun": 2016
+  }
+]

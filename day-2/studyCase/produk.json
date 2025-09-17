@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "nama": "Laptop asus ROG",
+    "harga": 7500000
+  },
+  {
+    "id": 2,
+    "nama": "Handphone poco x5 pro",
+    "harga": 3500000
+  },
+  {
+    "id": 3,
+    "nama": "earphone moondrop x robin HSR",
+    "harga": 500000
+  },
+  {
+    "id": 4,
+    "nama": "figure action",
+    "harga": 800000
+  },
+  {
+    "id": 5,
+    "nama": "Dakimakura astolfo",
+    "harga": 30000
+  }
+]
+
