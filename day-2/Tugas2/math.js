@@ -13,3 +13,4 @@ export function kali(a, b) {
 export function bagi(a, b) {
     return a / b;
 }
+
