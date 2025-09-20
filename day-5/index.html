@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--## 🎯 Level 1 - Gampang (10 soal)-->
+
+    <!--soal 1-->
+    <p id="p1"></p>
+<script>
+    document.getElementById("p1").innerText ="halo DOM!"
+</script>
+
+    <!--soal 2-->
+    <p class="paragraf">paragraf1</p>
+    <p class="paragraf">paragraf2</p>
+    <p class="paragraf">paragraf3</p>
+<script>
+    let element = document.getElementsByClassName("paragraf");
+for (let el of element){el.style.color ="blue"}
+</script>
+
+    <!--soal 3-->
+    <ul id="listHewan">
+        <li>Monyet</li>
+        <li>Babi</li>
+        <li>Anjing</li>
+        <li>Kucing</li>
+        <li>DPR</li>
+    </ul>
+<script>
+    const li = document.getElementsByTagName("li");
+    for (let i = 0; i < li.length; i++){
+        li[i].innerText += "- hewan"
+    }
+</script>
+
+    <!--soal 4-->
+    <img id="foto" src="https://www.google.com/imgres?q=alice%20timefield&imgurl=https%3A%2F%2Fi.namu.wiki%2Fi%2FF10mfYeIiXNgkbiSoRbVO5stmHh52278_EwkkL9Wly87BvzcsoWv5V_V-1RXbFMoaPpKGmEmMCILsSxTEqyPCg.webp&imgrefurl=https%3A%2F%2Fen.namu.wiki%2Fw%2F%25EC%2595%25A8%25EB%25A6%25AC%25EC%258A%25A4%2520%25ED%2583%2580%25EC%259E%2584%25ED%2595%2584%25EB%2593%259C&docid=e-AOyylT4mC_GM&tbnid=BWuz-4PaUsVmjM&vet=12ahUKEwjFgLK84-aPAxVnRmwGHe-sDCoQM3oECDgQAA..i&w=1000&h=550&hcb=2&ved=2ahUKEwjFgLK84-aPAxVnRmwGHe-sDCoQM3oECDgQAA" alt="test">
+<script>
+    document.querySelector("#foto").src = "assets/alice.jpg"
+</script>
+
+    <!--soal 5-->
+    <p class="text"></p>
+    <p class="text"></p>
+    <p class="text"></p>
+    <p class="text"></p>
+    <p class="text"></p>
+<script>
+  const paragraph = document.querySelectorAll(".text");
+  paragraph.forEach((p, i) => {
+    p.innerText = "teks ke -" + (i + 1);
+  });
+</script>
+
+    <!--soal 6-->
+    <p id="p2">awal</p>
+<script>
+    const p = document.getElementById("p2");
+    p.innerText = "Akhir";
+</script>
+
+    <!--soal 7-->
+    <p id="p3">Belajar DOM</p>
+<script>
+    const paragraf = document.getElementById("p3");
+    p.innerHTML = "<strong> Belajar DOM </strong>";
+</script>
+
+    <!--soal 8-->    
+    <div id="myDiv"></div>
+<script>
+    const DIVE = document.getElementById("myDiv");
+    DIVE.innerText="Isi baru dari JS";
+</script>
+
+    <!--soal 9-->
+    <p id="p4">Sembunyikan saya</p>
+<script>
+    const hide = document.getElementById("p4");
+    hide.style.display = "none"
+</script>
+
+    <!--soal 10-->
+    <p id="p5">tampilkan saya</p>
+<script>
+    const show = document.getElementById("p5");
+    show.style.display = "block"
+</script>
+
+
+    <!--## 🎯 Level 2 - Medium (5 soal)-->
+
+    <!--soal 1-->
+    <p class="warna">Paragraf 1</p>
+  <p class="warna">Paragraf 2</p>
+  <p class="warna">Paragraf 3</p>
+<script>
+    kalimat = document.querySelectorAll(".warna");
+    const colors = ["red", "green", "blue"];
+
+    kalimat.forEach((p, i) => {
+        p.style.color = colors[i];
+    })
+</script>
+
+    <!--soal 2-->
+<div id="box"></div>
+<script>
+     const div = document.getElementById("box");
+    div.style.width = "200px";
+    div.style.height = "200px";
+    div.style.background = "yellow";
+</script>
+
+    <!--soal 3-->
+      <a id="link">Klik Aku</a>
+<script>
+    const url = document.getElementById("link");
+    url.setAttribute ("href", "https://google.com");
+    url.setAttribute ("target", "blank");
+</script>
+
+    <!--soal 4-->
+    <p id="p7">paragraf A</p>
+    <p id="p7">paragraf B</p>
+    <p id="p7">paragraf C</p>
+<script>
+    const par = document.querySelectorAll("#p7");
+    par.forEach(p =>{
+    p.innerText = p.innerText.toUpperCase()    
+    });
+    
+</script>
+
+    <!--soal 5-->
+    <p id="teks">judul lama</p>
+<script>
+    const text = document.getElementById("teks");
+    text.classList.add("highlight")
+</script>
+
+    <!--## 🎯 Level 3 - Sulit (3 soal)-->
+    <!--soal 1-->
+    <ul>
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+    <li class="item">Item 3</li>
+    <li class="item">Item 4</li>
+    <li class="item">Item 5</li>
+  </ul>
+<script>
+    const items = document.querySelectorAll(".item");
+    
+    items.forEach((list, i) =>{
+        if ( i % 2 === 0){
+            list.style.color = "blue";
+        }else{
+            list.style.color = "red";
+        }
+    });
+</script>
+
+    <!--soal 2-->
+    <img class="img" src="https://via.placeholder.com/100x100?text=A" alt="Gambar A">
+  <img class="img" src="https://via.placeholder.com/100x100?text=B" alt="Gambar B">
+  <img class="img" src="https://via.placeholder.com/100x100?text=C" alt="Gambar C">
+<script>
+    const foto = document.querySelectorAll(".img");
+    foto.forEach(img =>{
+        img.src = "placeholder.jpg";
+    });
+</script>
+
+<!--soal 3-->
+    <p id="paragraf1">Hello</p>
+<script>
+    const p8 = document.getElementById("paragraf1");
+    p8.style.color = "white";
+    p8.style.background = "black";
+    p8.style.fontSize = "30px";
+</script>
+
+    <!--## 🎯 Level 4 - Extra Sulit (2 soal, Fetch API)-->
+
+    <!--soal 1-->
+    <p id="surat">example</p>
+<script>
+    fetch("https://equran.id/api/v2/surat/1")
+    .then(res => res.json())
+    .then(data => {
+    document.getElementById("surat").innerText = data.data.namaLatin
+    });
+</script>
+
+    <!--soal 2-->
+    <ul id="listing"></ul>
+<script>
+    fetch("https://equran.id/api/v2/surat")
+        .then(res => res.json())
+        .then(data => {
+          const list = document.getElementById("listing"); 
+          let count = 0;
+          
+          data.data.forEach(surat =>{
+              if (count < 5) {
+            const li = document.createElement("li");
+            li.innerText = surat.namaLatin;
+            list.appendChild(li);
+            count++;
+          }
+          })
+        })
+   
+    
+</script>
+</body>
+</html>
